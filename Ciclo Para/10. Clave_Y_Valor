@@ -1,0 +1,35 @@
+Algoritmo Clave_Y_Valor
+	Definir clave,c,calif,mostrarClave  Como Entero;
+	Definir mostrar_calif Como Texto;
+	Dimension clave[11];
+	Para c<-1 hasta 10 con paso 1 Hacer
+		Escribir "-";
+		Escribir "Digite la calificacion del estudiante con clave ",c;
+		Leer calif;
+		Si calif>=0 y calif <=10 entonces
+			clave[c]<-calif;
+		Sino
+			Escribir "Esta calificacion no es correcta";
+			c<-c-1;
+		FinSi
+	FinPara
+	Para c<-1 hasta 10 con paso 1 Hacer
+		Escribir Sin Saltar c,"=  ",clave[c],"|";
+	Finpara
+	Escribir "-";
+	Escribir "Desea mostrar la calificacion de algun estudiante? (Si, No)";
+	Leer mostrar_calif;
+	Si mostrar_calif ="Si" entonces
+		Mientras mostrar_calif="Si" Hacer
+			Escribir"Ingrese la clave del estudiante";
+			Leer mostrarClave;
+			Si mostrarClave >=1 y mostrarClave<=10 entonces
+				Escribir " El estudiante con clave ",mostrarClave," tiene una calificacion de ",clave[mostrarClave];
+			Sino
+				Escribir " La clave es incorrecta";
+			Finsi
+			Escribir "Desea mostrar la calificacion de algun otro estudiante? (Si, No)";
+			Leer mostrar_calif;   
+		FinMientras
+	Finsi
+Finalgoritmo

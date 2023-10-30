@@ -1,0 +1,55 @@
+Algoritmo Cuenta_caracteres
+	Definir palabra,v,c,es,ex Como Caracter;
+	Definir nov,noc,noes,noex,p,l Como Entero;
+
+	Escribir "Ingresa alguna palabra";
+	leer palabra;
+	
+	v <- "aeiouáéíóú";
+	nov <- 0;
+	Para p <- 0  Hasta Longitud(palabra) Con Paso 1 Hacer
+		Para l <- 0 Hasta Longitud(v) Con Paso 1 Hacer
+			si Subcadena(palabra,p,p)=Subcadena(v,l,l) Entonces
+				nov <- nov+1;
+			FinSi
+		FinPara
+	FinPara
+	Escribir "las vocales son: ", nov-1;
+	
+	
+	c <- "qwrtypsdfghjklñzxcvbnm";
+	noc <- 0;
+	Para p <- 0  Hasta Longitud(palabra) Con Paso 1 Hacer
+		Para l <- 0 Hasta Longitud(c) Con Paso 1 Hacer
+			si Subcadena(palabra,p,p)=Subcadena(c,l,l) Entonces
+				noc <- noc+1;
+			FinSi
+		FinPara
+	FinPara
+	Escribir "las consonantes son: ", noc-1;
+	
+	
+	es <- " ";
+	noes <- 0;
+	Para p <- 0  Hasta Longitud(palabra) Con Paso 1 Hacer
+		Para l <- 0 Hasta Longitud(es) Con Paso 1 Hacer
+			si Subcadena(palabra,p,p)=Subcadena(es,l,l) Entonces
+				noes <- noes+1;
+			FinSi
+		FinPara
+	FinPara
+	Escribir "los espacios son: ", noes-1;
+	
+	
+	ex <- "´!#$%&/()=?¡¿]>_:[{}.<-|°~~^;:</*-+.";
+	noex <- 0;
+	Para p <- 0  Hasta Longitud(palabra) Con Paso 1 Hacer
+		Para l <- 0 Hasta Longitud(ex) Con Paso 1 Hacer
+			si Subcadena(palabra,p,p)=Subcadena(ex,l,l) Entonces
+				noex <- noex+1;
+			FinSi
+		FinPara
+	FinPara
+	Escribir "los caracteres extraños son: ", noex-1;
+	
+FinAlgoritmo

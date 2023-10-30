@@ -1,0 +1,30 @@
+Algoritmo validar_dato_numerico
+Definir num,numu como caracter;
+Definir largo,i Como Entero;
+Definir validarnum Como Logico;
+
+
+Repetir 
+	
+Escribir "Ingrese algun numero";//puede ser > 1,2,3,4,5,6,7,8,9,0
+leer num;
+
+largo <- Longitud(num) ;
+validarnum <- Verdadero;
+
+	Para i<- 1 Hasta largo-1 Con Paso 1 Hacer
+		numu <- Subcadena(num,i,i);
+		Si numu <> '0' Y numu <> '1' Y numu <> '2' Y numu <> '3' Y numu <> '4' Y numu <> '5' Y numu <> '6' Y numu <> '7' Y numu <> '8' Y numu <> '9' Y numu <> '-' Y numu <> '.' Entonces
+			validarnum <- Falso;
+		FinSi
+	FinPara
+	
+	Si validarnum=Falso Entonces
+		Escribir "Dato incorrecto";
+	SiNo
+		Escribir "Dato correcto";
+	FinSi
+	
+Hasta Que validarnum = Verdadero
+
+FinAlgoritmo

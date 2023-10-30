@@ -1,0 +1,19 @@
+Algoritmo Reloj_Digital
+	definir hora,min,seg,h,m,s como entero;
+	
+	hora<-23;
+	min<-59;
+	seg<-59;
+	
+	
+	Para h<-hora Hasta 0 Con Paso -1 Hacer
+		Para m<-min Hasta 0 Con Paso -1 Hacer	
+			Para s<-seg Hasta 0 Con Paso -1 Hacer
+				
+				escribir h,":",m,":",s;
+				Limpiar Pantalla;
+			FinPara
+		FinPara
+	FinPara
+	
+FinAlgoritmo

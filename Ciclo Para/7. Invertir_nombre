@@ -1,0 +1,21 @@
+Algoritmo Invertir_nombre
+	
+	definir nombre como cadena;
+	definir rvs, rvsp Como Caracter;
+	definir c,cantidad,i como entero;
+	
+	c <-0;
+	rvsp <- " ";
+	
+	Escribir "Ingrese nombre a invertir:";
+	leer nombre;
+	cantidad<- Longitud(nombre);
+	Para i<-0 Hasta cantidad Con Paso 1 Hacer
+		rvs<-Subcadena(nombre,cantidad-c,cantidad-c);
+		rvsp<- Concatenar(rvsp,rvs);
+		c<- c +1;
+	FinPara
+	
+	Escribir "El nombre: ", nombre, " al reverso es: ",rvsp;
+	
+FinAlgoritmo

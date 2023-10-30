@@ -1,0 +1,15 @@
+Proceso Simebra_de_Zanahorias
+	Definir zanahorias, c Como Entero;
+	Escribir "Ingrese las zanahorias que desea plantar";
+	Leer zanahorias;
+	Si zanahorias >= 1 y zanahorias <= 1000 Entonces
+		para c <- 1 Hasta zanahorias con paso 1 Hacer
+			Escribir Sin Saltar "* ";
+			Si c mod 10 = 0 Entonces
+				Escribir     "";
+			FinSi
+		FinPara
+	SiNo
+		Escribir "Cantidad no valida de zanahorias";
+	FinSi
+FinProceso

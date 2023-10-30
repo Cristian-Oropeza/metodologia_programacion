@@ -1,0 +1,31 @@
+Algoritmo Simulacion_de_Calificaciones
+	
+    Definir numAl Como Entero;
+    Definir maximo, NumMin, suma, promedio,i Como Real;
+    maximo <- 0;
+    NumMin <- 11;
+    suma <- 0;
+	
+    Para i <- 1 Hasta 20 Con Paso 1 Hacer
+        numAl <- Aleatorio(0, 10);  
+        
+        Si numAl > maximo Entonces
+            maximo <- numAl;
+        FinSi;
+        
+        Si numAl < NumMin Entonces
+            NumMin <- numAl;
+        FinSi;
+		
+		Escribir sin saltar numAl,' ';
+        suma <- suma + numAl;
+    FinPara;
+	
+    Escribir "estos fueron los números generados";
+    promedio <- suma / 20;
+	
+    Escribir "El mayor número es: ", maximo;
+    Escribir "El menor número es: ", NumMin;
+    Escribir "El promedio es: ", promedio;
+    
+FinAlgoritmo
