@@ -1,0 +1,31 @@
+Algoritmo Ciclo_SEGUN__Sueldo_Trabajador
+	
+	Definir sueldo Como Real;
+	Definir tipo,hijos Como Entero;
+	
+	
+	Escribir Sin Saltar "Ingresa tu sueldo ";
+	leer sueldo;
+	
+	Escribir Sin Saltar "Ingresa tipo de trabajador ";
+	Leer tipo;
+	
+	Escribir Sin Saltar "Ingresa numero de hijos";
+	Leer hijos;
+
+Segun tipo Hacer
+	1:
+		Escribir "10%", sueldo*1.1+sueldo*0.05*hijos;
+	2:
+		Escribir "15%";
+	3:
+		Escribir "20%";
+	4:
+		Escribir "30%";
+	De Otro Modo:
+		Escribir "Trabajador incorrecto";
+FinSegun
+
+
+	
+FinAlgoritmo

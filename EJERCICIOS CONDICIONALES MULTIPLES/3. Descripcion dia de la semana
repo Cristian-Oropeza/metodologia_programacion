@@ -1,0 +1,30 @@
+Algoritmo Descripcion_dia_de_la_semana
+	
+	Definir dia Como Entero;
+	
+	Escribir Sin Saltar"Ingresa el numero de dia (1 al 7)";
+	leer dia;
+	
+	Segun dia Hacer
+		1:
+			Escribir "Domingo dia feliz y del sol";
+		2:
+			Escribir "Lunes dia de la luna";
+		3:
+			Escribir "Martes dia de Marte";
+		4:
+			Escribir "Miercoles dia de Mercurio";
+		5:
+			Escribir "Jueves dia de Jupiter";
+		6:
+			Escribir "Viernes dia de Venus";
+		7:
+			Escribir "Sabado dia de Saturno";
+		De Otro Modo:
+			Escribir "Dia incorrecto";
+	FinSegun
+	
+	
+	
+	
+FinAlgoritmo
