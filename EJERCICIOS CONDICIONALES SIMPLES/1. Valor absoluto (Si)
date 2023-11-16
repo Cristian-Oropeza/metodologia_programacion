@@ -1,0 +1,14 @@
+Algoritmo Valor_Absoluto
+	
+	definir number Como Real;
+	
+	Escribir "Ingresa el número:";
+	Leer number;
+	
+	si number >=0 Entonces
+		Escribir "Su Valor Absoluto es: ", number;
+	SiNo
+		Escribir "Su Valor Absoluto es: ", (-1*number);
+	FinSi
+	
+FinAlgoritmo
