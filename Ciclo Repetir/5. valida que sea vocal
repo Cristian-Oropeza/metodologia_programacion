@@ -1,0 +1,29 @@
+Algoritmo validar_volcal
+	Definir car como caracter;
+	Definir i Como Entero;
+	Definir validarc Como Logico;
+	
+	
+	Repetir 
+		
+		Escribir "Ingrese un caracter";
+		leer car;
+		
+		validarc <- Verdadero;
+		
+		Para i<- 1 Hasta 1 Con Paso 1 Hacer
+			Si car <> "a" y car <> "e" y car <> "i" y car <> "o" y car <> "u" y car <> "á" y car <> "é" y car <> "í" y car <> "ó" y car <> "ú"Entonces
+				validarc <- Falso;
+			FinSi
+		FinPara
+		
+		Si validarc=Falso Entonces
+			Escribir "Presione una tecla para continuar";
+		SiNo
+			Escribir "Has ingresado el nombre correctamente";
+		FinSi
+		
+	Hasta Que validarc = Verdadero
+	
+FinAlgoritmo
+

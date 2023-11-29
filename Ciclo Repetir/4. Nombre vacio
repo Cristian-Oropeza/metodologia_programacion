@@ -1,0 +1,20 @@
+Algoritmo Nombre_vacio
+	Definir nombre como caracter;
+	
+	Repetir 
+		
+		Escribir "Ingrese un nombre";
+		leer nombre;
+		
+		
+		
+		Si Longitud(nombre)>1 Entonces
+			Escribir "Has ingresado el nombre correctamente";
+		Sino
+			Escribir "Ingrese algun nombre";
+		FinSi
+		
+	Hasta Que Longitud(nombre)>1
+	
+FinAlgoritmo
+

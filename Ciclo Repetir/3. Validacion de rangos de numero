@@ -1,0 +1,27 @@
+Algoritmo validar_dato_numerico
+	Definir num como entero;
+	Definir validarnum Como Logico;
+	
+	
+	Repetir 
+		
+		Escribir "Ingrese algun numero entre [1, 10] y [40, 50]";
+		leer num;
+		
+		validarnum <- Verdadero;
+		
+		Si num <1 o num>10 y num <40 o num >50 Entonces
+			validarnum <- Falso;
+		SiNo
+			validarnum <- Verdadero;
+	FinSi
+	
+		Si validarnum=Falso Entonces
+			Escribir "Ingresa el numero entre [1, 10] y [40, 50]";
+		SiNo
+			Escribir "Has ingresado el número correctamente";
+		FinSi
+		
+	Hasta Que validarnum = Verdadero
+	
+FinAlgoritmo
