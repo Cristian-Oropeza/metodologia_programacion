@@ -1,0 +1,27 @@
+Algoritmo Sembrando_Zanahorias_Con_Mientras
+	
+	//21 de noviembre de 2023
+	//Cristian Efraín Oropeza Yepiz
+	// Algoritmo que muestra como plantar zanahorias y lechugas
+	
+	
+	Definir num, i Como Entero;
+	
+	Escribir "Ingrese la cantidad de ortalizas a sembrar";
+	Leer i;
+	
+	num <- 1;
+	
+	Mientras num <= i Hacer
+		si num mod 2=0 Entonces
+			Escribir Sin Saltar"* ";
+		SiNo
+			Escribir Sin Saltar "& ";
+		FinSi
+		si num mod 10=0 Entonces
+			Escribir " ";
+		FinSi
+		num <- num+1;
+	FinMientras
+	
+FinAlgoritmo

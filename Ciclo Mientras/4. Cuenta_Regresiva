@@ -1,0 +1,23 @@
+Algoritmo Cuenta_Regresiva
+	
+	//21 de noviembre
+	// Cristian Efraín Oropeza Yepiz
+	//Algoritmo que da la cuenta regresiva de un cohete
+	
+	Definir num,i Como Entero;
+	
+	Escribir "Ingrese numero de cuenta regresiva";
+	leer i;
+	
+	
+	Mientras i >= 1 Hacer
+			i <-i -1;
+			Escribir i;
+			Esperar 1 Segundos;;
+			Limpiar Pantalla;
+	FinMientras
+	
+	
+	
+	
+FinAlgoritmo

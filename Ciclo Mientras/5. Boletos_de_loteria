@@ -1,0 +1,22 @@
+Algoritmo Boletos_de_loteria
+
+	//29 de noviembre 2023
+	//Cristian Efraín Oropeza Yepiz
+	//Algoritmo que dice Hola 10 veces
+
+	definir boleto, val ,i Como Entero;
+	escribir Sin Saltar "Ingresa el número que consideras que ganará ";
+	Leer val;
+	i<-1;
+	boleto<-azar (101);
+	mientras val <> boleto Hacer
+		boleto <-azar(101);
+		i<-i+1;
+	FinMientras
+	si i<=100 Entonces
+		Escribir "En ",i," intentos se sacará el número ",val; 
+	SiNo
+		escribir "Intente otra vez, ya se hicieron mas de 100 intentos :(";
+	FinSi
+	
+FinAlgoritmo
